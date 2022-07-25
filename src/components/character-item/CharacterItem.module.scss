@@ -1,0 +1,65 @@
+@import "src/styles/variables";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 19%;
+  margin-right: 1%;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover{
+    transform: translateY(-10px);
+  }
+  &:focus{
+    transform: translateY(-10px);
+  }
+}
+.main{
+  position: relative;
+  width: 100%;
+  margin-bottom: -5px;
+
+  &Img{
+    width: 100%;
+  }
+  &Name{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: $black;
+    background-color: $white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: $comicFont;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  &Status{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: $standardFont;
+    font-weight: 500;
+    background-color: $red;
+    color: $white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+  }
+}
+.description{
+  height: 100%;
+  color: $white;
+  border: $white solid 1px;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  font-family: $standardFont;
+  background-color: $black;
+}
+
+
+

@@ -1,0 +1,26 @@
+.app{
+  &Container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  &Content{
+    position: relative;
+  }
+  &Rick{
+    position: fixed;
+    bottom: 0;
+    right: -150px;
+    height: 90%;
+    z-index: 0;
+  }
+  &Morty{
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    height: 50%;
+    z-index: 0;
+  }
+}
